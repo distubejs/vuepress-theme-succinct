@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import { resolvePage } from '../util'
+import { resolvePage, endingSlashRE } from '../util'
 import isString from 'lodash/isString'
 import isNil from 'lodash/isNil'
 
@@ -128,7 +128,8 @@ function find (page, items, offset) {
   flatten(items, res)
   for (let i = 0; i < res.length; i++) {
     const cur = res[i]
-    if (cur.type === 'page' && cur.path === decodeURIComponent(page.path)) {
+    const pagePath = decodeURIComponent(page.path).replace(endingSlashRE, '') || '/'
+    if (cur.path === pagePath) {
       return res[i + offset]
     }
   }
@@ -137,6 +138,7 @@ function find (page, items, offset) {
 function flatten (items, res) {
   for (let i = 0, l = items.length; i < l; i++) {
     if (items[i].type === 'group') {
+      if (items[i].path) res.push(items[i])
       flatten(items[i].children || [], res)
     } else {
       res.push(items[i])
