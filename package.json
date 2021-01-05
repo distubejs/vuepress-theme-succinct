@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-succinct",
-  "version": "1.6.4",
+  "version": "1.7.2",
   "description": "A slightly opinionated theme for Vuepress",
   "main": "index.js",
   "publishConfig": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microflash/vuepress-theme-succinct"
+    "url": "git+https://github.com/distubejs/vuepress-theme-succinct"
   },
   "keywords": [
     "documentation",
@@ -18,14 +18,14 @@
   ],
   "maintainers": [
     {
-      "name": "Naiyer Asif"
+      "name": "Skick"
     }
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Microflash/vuepress-theme-succinct/issues"
   },
-  "homepage": "https://succinct.mflash.dev",
+  "homepage": "https://distube.js.org",
   "dependencies": {
     "@vuepress/plugin-active-header-links": "^1.7.1",
     "@vuepress/plugin-nprogress": "^1.7.1",
