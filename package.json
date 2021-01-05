@@ -27,13 +27,13 @@
   },
   "homepage": "https://distube.js.org",
   "dependencies": {
-    "@vuepress/plugin-active-header-links": "^1.7.1",
-    "@vuepress/plugin-nprogress": "^1.7.1",
-    "@vuepress/plugin-search": "^1.7.1",
+    "@vuepress/plugin-active-header-links": "^1.8.0",
+    "@vuepress/plugin-nprogress": "^1.8.0",
+    "@vuepress/plugin-search": "^1.8.0",
     "docsearch.js": "^2.6.3",
     "lodash": "^4.17.20",
     "stylus": "^0.54.8",
-    "stylus-loader": "^4.3.1",
+    "stylus-loader": "^3.0.2",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-smooth-scroll": "^0.0.10"
   }
